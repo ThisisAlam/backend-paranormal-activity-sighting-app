@@ -27,6 +27,9 @@ export async function saveSightings(sightings) {
         JSON.stringify(sightings, null, 2)
     )
 }
+export function getUUID(reqUrl) {
+    return reqUrl.split("/").pop();
+}
 
 export function sendJSONResponse(
     res,
