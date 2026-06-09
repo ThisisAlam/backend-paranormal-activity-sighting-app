@@ -1,7 +1,9 @@
 import http from "node:http";
 import path from "node:path";
 import fs from "node:fs/promises";
+
 import { getAllSightings } from "./controllers/sightingsController.js";
+import { getSightingsById } from "./controllers/sightingsController.js";
 import { sendJSONResponse } from "./utils/utils.js";
 
 const PORT = 8000
@@ -20,6 +22,9 @@ const server = http.createServer(async (req, res) => {
         }
         else if (req.url === "/api/sightings" && req.method === "GET") {
             return await getAllSightings(req.url, req.method, res);
+        } else if (req.url.startsWith("/api/sightings") && req.method === "GET") {
+            const uuid = req.url.split("/").pop()
+            return await getSightingsById(req.url, req.method, res, uuid)
         } else {
             sendJSONResponse(res, 404, "application/json", {
                 success: false,
