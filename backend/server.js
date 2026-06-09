@@ -1,37 +1,41 @@
-import http from "node:http"
-import fs from "node:fs/promises"
-import { getSightings } from "./utils/utils.js";
+import http from "node:http";
+import path from "node:path";
+import fs from "node:fs/promises";
+import { getAllSightings } from "./controllers/sightingsController.js";
+import { sendJSONResponse } from "./utils/utils.js";
 
 const PORT = 8000
 
+const __dirname = import.meta.dirname
+
 const server = http.createServer(async (req, res) => {
-    
-    if(req.url === "/"){
-        res.writeHead(200, { "Content-Type": "application/json", })
-        res.end(JSON.stringify({
-            success: true,
-            message: "Welcome to Home Page",
-            requested_URL: req.url,
-            requested_Method: req.method,
-        },null,2))
-    }
-    else if(req.url === "/api/sightings" && req.method === "GET"){
-        const sightings = await getSightings();
-        res.writeHead(200, { "Content-Type": "application/json", })
-        return res.end(JSON.stringify({
-            success: true,
-            data: sightings,
-            requested_URL: req.url,
-            requested_Method: req.method,
-        },null,2))
-    } else {
-        res.writeHead(404, { "Content-Type": "application/json", })
-        res.end(JSON.stringify({
+    try {
+        if (req.url === "/") {
+            sendJSONResponse(res, 200, "application/json", {
+                success: true,
+                message: "Welcome to Home Page",
+                requested_URL: req.url,
+                requested_Method: req.method,
+            })
+        }
+        else if (req.url === "/api/sightings" && req.method === "GET") {
+            return await getAllSightings(req.url, req.method, res);
+        } else {
+            sendJSONResponse(res, 404, "application/json", {
+                success: false,
+                message: "Route not Found",
+                requested_URL: req.url,
+                requested_Method: req.method,
+            })
+        }
+    } catch (err) {
+        console.log(err)
+        sendJSONResponse(res, 500, "application/json", {
             success: false,
-            message: "Route not Found",
+            error: err,
+            message: "Internal server error",
             requested_URL: req.url,
-            requested_Method: req.method,
-        },null,2))
+        })
     }
 
 })

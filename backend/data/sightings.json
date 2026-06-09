@@ -1,16 +1,44 @@
 [
   {
-    "id": 1,
-    "title": "The Phantom Warning",
-    "date": "2025-01-07",
+    "uuid": "a9f1c6e5-9383-4d12-b28d-734c9370f861",
     "location": "Exeter, UK",
-    "details": "A ghostly warning echoed through the street."
+    "timeStamp": "7 Jan 2025 at 09:30",
+    "title": "The Phantom Warning",
+    "text": "I was drifting through town, lost in thought, when I stepped into the street without looking. A piercing shriek sliced through the air—an old woman, her voice cracking like dead leaves, screamed for me to stop. I froze and turned just in time to see a bus thunder past, a blast of air clawing at my face. My heart pounded as I looked across to thank her, but the street was empty. No trace of her remained. That’s when the chill set in—she looked exactly like my grandmother, who we buried seven years ago. I still remember the floral scarf she wore... the same one we buried her in."
   },
   {
-    "id": 2,
-    "title": "The Pianist's Lament",
-    "date": "2024-03-20",
+    "uuid": "47e3291a-6f67-4fc0-9d06-25fa4d1f3ae1",
     "location": "Edinburgh, UK",
-    "details": "A piano played itself in an abandoned theatre."
+    "timeStamp": "20 March 2024 at 11:30",
+    "title": "The Pianist's Lament",
+    "text": "We wandered into the skeleton of an abandoned theater, its air thick with forgotten breath. As we crept through its crumbling halls, a piano melody began to drift—low, haunting, almost mournful. It drew us to the stage, where a dust-veiled piano sat, keys untouched, strings long dead. Then he appeared: a tall, gaunt figure in tattered evening wear, standing in the balcony like a relic of grief. He stared down at us, his eyes hollow with memory, before dissolving into nothingness. Later, I learned of the fire—the pianist who perished mid-performance, still searching for his final ovation."
+  },
+  {
+    "uuid": "b83cb7e0-df38-493b-b53d-2616175ea5f9",
+    "location": "Dunwich, UK",
+    "timeStamp": "7 Jan 2025 at 10:00",
+    "title": "The Widow in the Rocking Chair",
+    "text": "The hotel was ancient, its walls whispering with age. At 2AM, I woke to the slow creak of footsteps across my room, soft and deliberate. I called out, but no answer came. I grappled with the light switch. As my eyes adjusted to the pale, sickly glow that spilled across the room, I noticed the rocking chair in the corner, moving to and fro as if someone had just risen from it. I watched it until it came to a dead, silent stop. In the gray light of dawn, I told the hotel owner. She gave me a knowing glance. 'That chair belonged to Edith. She lost her husband at sea and never left this room again. You’re not the first to feel her presence.'"
+  },
+  {
+    "uuid": "d2f8e7a4-4c91-4a5c-9b4e-8c1f2a7d5e31",
+    "location": "Exeter, UK",
+    "timeStamp": "7 May 2025 at 09:26",
+    "title": "The Ghost in Accounting",
+    "text": "At our office, the third cubicle from the break room was always empty. Management claimed it was reserved for visiting staff, but no one had ever seen anyone work there. One evening, while staying late to finish a report, I noticed a cup of coffee sitting on the desk. Steam still curled from its surface. The office had been empty for over an hour. As I approached, the monitor flickered to life. A spreadsheet opened by itself. In cell A1, letters began appearing one by one: 'HELP ME.' I froze. The overhead lights dimmed and a freezing draft swept through the room. Over the following weeks, strange incidents became common. Printers activated on their own during the night. Emails were sent from an account belonging to an employee who had died years earlier. Then one Friday, a document appeared in the shared drive containing payroll records from 1998. Buried within them was the name of a man who had vanished after suffering a fatal heart attack at his desk. His workstation number matched the empty cubicle. After the records were discovered, the disturbances suddenly stopped. But every now and then, staff arriving early report seeing a shadow seated at the desk, staring silently at a glowing monitor before disappearing when approached."
+  },
+  {
+    "uuid": "8f5b2c7e-1d4a-4f9e-b6c2-3a7d8e5f1b92",
+    "location": "Exeter, UK",
+    "timeStamp": "8 May 2025 at 12:08",
+    "title": "The Bathroom Mirror Incident",
+    "text": "It started on an ordinary Monday morning. While brushing my teeth, I glanced into the bathroom mirror and noticed something strange. My reflection seemed delayed by a fraction of a second. I blinked and convinced myself I was tired. The next morning, it happened again. As days passed, the delay became more obvious. One morning, I raised my hand and my reflection hesitated before copying the movement. A cold feeling settled in my stomach. Then, a week later, I saw something impossible. My reflection looked directly at me and smiled. I wasn't smiling. I stumbled backward and looked away. When I gathered the courage to look again, everything appeared normal. After that, I began covering the mirror at night. The disturbances stopped until one evening during a power outage. Using only a candle for light, I passed the bathroom and noticed the mirror uncovered. In its reflection stood a tall figure behind me. I spun around, but there was no one there. The figure remained visible in the mirror for several seconds before fading into darkness. I moved out of that apartment two months later. The new tenant contacted me recently. He asked whether I had ever experienced anything unusual with the bathroom mirror."
+  },
+  {
+    "uuid": "c7a3d9e1-5f8b-4e2c-a7d4-9b1f6c3e8a45",
+    "location": "Glasgow, Scotland",
+    "timeStamp": "22 May 2025 at 16:51",
+    "title": "Invisible Man Sighted in Glasgow!",
+    "text": "I was crossing George Square late in the afternoon when I noticed something moving through the crowd. At first, it seemed like people were simply stepping aside for an approaching pedestrian. But there was no one there. The space between them remained empty. A few moments later, a newspaper lying on the pavement suddenly lifted into the air and drifted forward as if carried by unseen hands. Several people stopped and stared. Then footprints began appearing in a puddle near the fountain. Fresh impressions formed one after another, leading across the square with no visible person creating them. Witnesses gathered, watching in silence. One woman claimed she heard breathing beside her. Another reported feeling a hand brush against her shoulder. The disturbances continued for nearly five minutes before abruptly ending. The footprints stopped in the center of the square and went no farther. Police investigated but found no explanation. Days later, security footage from nearby cameras surfaced online. The recordings showed pedestrians repeatedly glancing toward the same empty location, some even stepping aside as though avoiding an unseen figure. To this day, nobody has identified what moved through George Square that afternoon."
   }
 ]
