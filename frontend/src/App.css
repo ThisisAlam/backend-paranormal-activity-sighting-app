@@ -135,7 +135,16 @@ body {
 /************************
  | READ PAGE
  ************************/
-
+.success-message {
+    background: rgba(46, 204, 113, 0.15);
+    color: #2ecc71;
+    border: 1px solid #2ecc71;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
 .read-page {
   padding: 20px;
   overflow-y: auto;

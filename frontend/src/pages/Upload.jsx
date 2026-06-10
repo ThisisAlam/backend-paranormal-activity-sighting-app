@@ -41,14 +41,16 @@ export default function Upload() {
                     body: JSON.stringify(formData)
                 }
             );
-
+            if (response.ok) {
+                navigate("/read", {
+                    state: {
+                        successMessage: "Story submitted successfully!"
+                    }
+                });
+            }
             const data = await response.json();
 
             console.log(data);
-
-            if (response.ok) {
-                navigate("/read");
-            }
 
         } catch (error) {
             console.log(error);
