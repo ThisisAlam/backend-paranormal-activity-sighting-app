@@ -37,6 +37,17 @@ const server = http.createServer(async (req, res) => {
         }
         else if (req.url.startsWith("/api/sightings/") && req.method === "GET") {
             const uuid = getUUID(req.url)
+            if (!uuid) {
+                return sendJSONResponse(
+                    res,
+                    400,
+                    "application/json",
+                    {
+                        success: false,
+                        message: "UUID is required"
+                    }
+                );
+            }
             return await getSightingsById(
                 req.url,
                 req.method,
@@ -47,6 +58,17 @@ const server = http.createServer(async (req, res) => {
 
         else if (req.url.startsWith("/api/sightings/") && req.method === "PUT") {
             const uuid = getUUID(req.url)
+            if (!uuid) {
+                return sendJSONResponse(
+                    res,
+                    400,
+                    "application/json",
+                    {
+                        success: false,
+                        message: "UUID is required"
+                    }
+                );
+            }
             return await updateSightingsById(
                 req.url,
                 req.method,
@@ -57,6 +79,17 @@ const server = http.createServer(async (req, res) => {
         }
         else if (req.url.startsWith("/api/sightings/") && req.method === "DELETE") {
             const uuid = getUUID(req.url)
+            if (!uuid) {
+                return sendJSONResponse(
+                    res,
+                    400,
+                    "application/json",
+                    {
+                        success: false,
+                        message: "UUID is required"
+                    }
+                );
+            }
             return await deleteSightingById(
                 req.url,
                 req.method,

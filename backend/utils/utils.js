@@ -29,6 +29,7 @@ export async function saveSightings(sightings) {
 }
 export function getUUID(reqUrl) {
     return reqUrl.split("/").pop();
+    
 }
 
 export function sendJSONResponse(
