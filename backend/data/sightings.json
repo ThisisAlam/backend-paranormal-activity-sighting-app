@@ -47,5 +47,19 @@
     "timeStamp": "10 June 2026 at 18:00",
     "text": "Students heard footsteps in an empty classroom and saw a shadow moving across the blackboard.",
     "uuid": "770c6411-d250-4e72-88f9-1c52b6060c70"
+  },
+  {
+    "title": "NewStory",
+    "location": "country, city",
+    "timeStamp": "2026-06-10T14:32",
+    "text": "scary story",
+    "uuid": "fccfb815-b1eb-4b6d-a825-d46be35f7623"
+  },
+  {
+    "title": "a new sotry",
+    "location": "country, city",
+    "timeStamp": "2026-06-10T14:37",
+    "text": "scary storhy 2",
+    "uuid": "75f2bc85-d141-4d47-a644-1d39392aeb77"
   }
 ]

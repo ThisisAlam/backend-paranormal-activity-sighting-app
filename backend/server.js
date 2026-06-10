@@ -14,6 +14,25 @@ import {
 const PORT = 8000
 
 const server = http.createServer(async (req, res) => {
+    res.setHeader(
+        "Access-Control-Allow-Origin",
+        "*"
+    );
+
+    res.setHeader(
+        "Access-Control-Allow-Methods",
+        "GET, POST, PUT, DELETE, OPTIONS"
+    );
+
+    res.setHeader(
+        "Access-Control-Allow-Headers",
+        "Content-Type"
+    );
+
+    if (req.method === "OPTIONS") {
+        res.writeHead(204);
+        return res.end();
+    }
     try {
         if (req.url === "/") {
             sendJSONResponse(res, 200, "application/json", {

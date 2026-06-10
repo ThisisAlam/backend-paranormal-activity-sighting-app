@@ -1,0 +1,467 @@
+/********************
+    APP
+*********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #252942;
+  font-family: "Poppins", sans-serif;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.app-container {
+  width: 430px;
+  min-height: 95vh;
+
+  margin: 15px auto;
+
+  border: 6px solid white;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.app-container::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background-image: url("/ghostbg.jpg");
+  background-size: cover;
+  background-position: center;
+
+  opacity: 0.4;
+  /* control image darkness/lightness */
+
+  z-index: -1;
+}
+
+/* .app-container {
+  width: 430px;
+  min-height: 95vh;
+
+  margin: 15px auto;
+
+  border: 6px solid white;
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  background-image: url("/ghostbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  box-shadow: 0 0 10px grey;
+} */
+/********************
+    HEADER
+*********************/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+  padding: 15px 20px;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.nav a.active {
+  color: White;
+  text-decoration: underline;
+}
+
+/********************
+    HOME PAGE
+*********************/
+.home-page {
+  min-height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.main-title {
+  font-family: "Frijole", cursive;
+  color: white;
+  font-size: 2.25em;
+  line-height: 1.15;
+  width: 80%;
+  margin-top: 40px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.sub-title {
+  font-family: "Frijole", cursive;
+  width: 90%;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 250px;
+  opacity: 70%;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+/************************
+ | READ PAGE
+ ************************/
+
+.read-page {
+  padding: 20px;
+  overflow-y: auto;
+  height: 73vh;
+
+}
+
+/* Width of scrollbar */
+.read-page::-webkit-scrollbar {
+  width: 8px;
+  /* display: none; to Hide the scrollbar */
+}
+
+/* Track (background) */
+.read-page::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+/* Thumb (draggable part) */
+.read-page::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+/* Hover effect */
+.read-page::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.read-page-title {
+  font-family: "Frijole", cursive;
+  color: white;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+}
+
+.sightings-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  width: 100%;
+}
+
+.sighting-card {
+  background-color: rgba(255, 255, 255, 0.92);
+
+  padding: 20px;
+
+  border-radius: 8px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+  color: #333;
+}
+
+.sighting-meta {
+  font-size: 0.9rem;
+  color: #666;
+
+  margin-bottom: 8px;
+}
+
+.sighting-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  margin-bottom: 15px;
+
+  color: #222;
+}
+
+.sighting-preview {
+  line-height: 1.7;
+
+  color: #444;
+
+  margin-bottom: 10px;
+}
+
+.read-more-link {
+  display: block;
+
+  text-align: right;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  color: #444;
+
+  transition: 0.2s;
+}
+
+.read-more-link:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/************************
+ | READ BY ID PAGE
+ ************************/
+
+.read-by-id-page {
+  padding: 20px;
+  overflow-y: auto;
+  height: 67vh;
+
+}
+
+/* Width of scrollbar */
+.read-by-id-page::-webkit-scrollbar {
+  width: 8px;
+  /* display: none; to Hide the scrollbar */
+}
+
+/* Track (background) */
+.read-by-id-page::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+/* Thumb (draggable part) */
+.read-by-id-page::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+/* Hover effect */
+.read-by-id-page::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.back-link {
+  display: inline-block;
+  margin: 10px 20px;
+  color: white;
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.2s;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.story-card {
+  background: rgba(255, 255, 255, 0.92);
+
+  border-radius: 10px;
+
+  padding: 25px;
+
+  color: #222;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+.story-title {
+  font-family: "Frijole", cursive;
+
+  font-size: 2rem;
+
+  text-align: center;
+
+  margin-bottom: 20px;
+
+  color: #222;
+}
+
+.story-meta {
+  text-align: center;
+
+  font-size: 0.95rem;
+
+  color: #666;
+
+  margin-bottom: 25px;
+
+  line-height: 1.8;
+}
+
+.story-content {
+  font-size: 1.1rem;
+
+  line-height: 1.9;
+
+  color: #333;
+
+  white-space: pre-wrap;
+}
+
+/************************
+ | UPLOAD PAGE
+ ************************/
+
+.upload-page {
+  padding: 20px;
+  overflow-y: auto;
+  height: 73vh;
+
+}
+
+/* Width of scrollbar */
+.upload-page::-webkit-scrollbar {
+  width: 8px;
+  /* display: none; to Hide the scrollbar */
+}
+
+/* Track (background) */
+.upload-page::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+/* Thumb (draggable part) */
+.upload-page::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+/* Hover effect */
+.upload-page::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.upload-title {
+  font-family: "Frijole", cursive;
+
+  color: white;
+
+  text-align: center;
+
+  font-size: 2.2rem;
+
+  margin-top: 10px;
+  margin-bottom: 35px;
+
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+}
+
+.upload-form {
+  background: rgba(30, 30, 30, 0.85);
+
+  padding: 25px;
+
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+.upload-form label {
+  color: white;
+
+  font-weight: 600;
+
+  font-size: 1rem;
+}
+
+.upload-form input,
+.upload-form textarea {
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 4px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 1rem;
+}
+
+.upload-form textarea {
+  resize: none;
+}
+
+.submit-btn {
+  margin-top: 10px;
+
+  padding: 15px;
+
+  background: transparent;
+
+  border: 2px solid white;
+
+  border-radius: 4px;
+
+  color: white;
+
+  font-family: "Frijole", cursive;
+
+  font-size: 1.4rem;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.submit-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/********************
+    Footer
+*********************/
+.footer {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+
+  text-align: center;
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 500;
+}
