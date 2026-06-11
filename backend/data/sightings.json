@@ -1,5 +1,19 @@
 [
   {
+    "uuid": "c10dc37a-d943-40d5-a491-28b778cbd488",
+    "title": "New story title",
+    "location": "country, city",
+    "text": "new scary story",
+    "timeStamp": "2026-06-11T08:31"
+  },
+  {
+    "uuid": "19a8648d-20ec-4a0e-b0c7-87183a5ac904",
+    "title": "New Story Title",
+    "location": "country, city",
+    "text": "New scary story.",
+    "timeStamp": "2026-06-11T07:52"
+  },
+  {
     "title": "The Ghost in the School - UPDATED",
     "location": "Lahore, Pakistan",
     "timeStamp": "10 June 2026 at 18:00",
