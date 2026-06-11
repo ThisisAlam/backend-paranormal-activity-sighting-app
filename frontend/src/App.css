@@ -346,7 +346,16 @@ body {
 /************************
  | UPLOAD PAGE
  ************************/
+.error-message {
+    color: #ff6b6b;
 
+    font-size: 0.85rem;
+
+    margin-top: -8px;
+    margin-bottom: 8px;
+
+    font-weight: 500;
+}
 .upload-page {
   padding: 20px;
   overflow-y: auto;
@@ -384,10 +393,10 @@ body {
 
   text-align: center;
 
-  font-size: 2.2rem;
+  font-size: 2rem;
 
-  margin-top: 10px;
-  margin-bottom: 35px;
+  /* margin-top: 10px; */
+  margin-bottom: 15px;
 
   text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
 }
@@ -395,14 +404,14 @@ body {
 .upload-form {
   background: rgba(30, 30, 30, 0.85);
 
-  padding: 25px;
+  padding: 15px 20px;
 
   border-radius: 10px;
 
   display: flex;
   flex-direction: column;
 
-  gap: 14px;
+  gap: 10px;
 }
 
 .upload-form label {
@@ -417,7 +426,7 @@ body {
 .upload-form textarea {
   width: 100%;
 
-  padding: 14px;
+  padding: 10px;
 
   border: none;
 
@@ -425,9 +434,11 @@ body {
 
   font-family: "Poppins", sans-serif;
 
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
-
+.upload-form textarea{
+  height: 120px;
+}
 .upload-form textarea {
   resize: none;
 }
@@ -456,6 +467,9 @@ body {
 
 .submit-btn:hover {
   background: rgba(255, 255, 255, 0.1);
+}
+.character-counter{
+  color:#939393;
 }
 
 /********************

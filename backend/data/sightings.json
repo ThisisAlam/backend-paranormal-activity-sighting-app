@@ -1,5 +1,12 @@
 [
   {
+    "title": "The Ghost in the School - UPDATED",
+    "location": "Lahore, Pakistan",
+    "timeStamp": "10 June 2026 at 18:00",
+    "text": "Students heard footsteps in an empty classroom and saw a shadow moving across the blackboard.",
+    "uuid": "770c6411-d250-4e72-88f9-1c52b6060c70"
+  },
+  {
     "uuid": "a9f1c6e5-9383-4d12-b28d-734c9370f861",
     "location": "Exeter, UK",
     "timeStamp": "7 Jan 2025 at 09:30",
@@ -40,19 +47,5 @@
     "timeStamp": "22 May 2025 at 16:51",
     "title": "Invisible Man Sighted in Glasgow!",
     "text": "I was crossing George Square late in the afternoon when I noticed something moving through the crowd. At first, it seemed like people were simply stepping aside for an approaching pedestrian. But there was no one there. The space between them remained empty. A few moments later, a newspaper lying on the pavement suddenly lifted into the air and drifted forward as if carried by unseen hands. Several people stopped and stared. Then footprints began appearing in a puddle near the fountain. Fresh impressions formed one after another, leading across the square with no visible person creating them. Witnesses gathered, watching in silence. One woman claimed she heard breathing beside her. Another reported feeling a hand brush against her shoulder. The disturbances continued for nearly five minutes before abruptly ending. The footprints stopped in the center of the square and went no farther. Police investigated but found no explanation. Days later, security footage from nearby cameras surfaced online. The recordings showed pedestrians repeatedly glancing toward the same empty location, some even stepping aside as though avoiding an unseen figure. To this day, nobody has identified what moved through George Square that afternoon."
-  },
-  {
-    "title": "The Ghost in the School - UPDATED",
-    "location": "Lahore, Pakistan",
-    "timeStamp": "10 June 2026 at 18:00",
-    "text": "Students heard footsteps in an empty classroom and saw a shadow moving across the blackboard.",
-    "uuid": "770c6411-d250-4e72-88f9-1c52b6060c70"
-  },
-  {
-    "title": "a",
-    "location": "country, city",
-    "timeStamp": "2026-06-10T18:22",
-    "text": "asdf",
-    "uuid": "75b772bc-8edf-41c9-8435-60837b97a11e"
   }
 ]

@@ -102,7 +102,7 @@ export async function createSighting(req, res) {
 
             const sightings = await getSightings();
 
-            sightings.push(newSighting);
+            sightings.unshift(newSighting);
 
             await saveSightings(sightings);
 
